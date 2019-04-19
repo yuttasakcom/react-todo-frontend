@@ -1,1 +1,1 @@
-# React Simple Boilerplate
+# React Todo Frontend

@@ -1,27 +1,20 @@
 {
-  "name": "react-simple-boilerplate",
+  "name": "react-todo-frontend",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:yuttasakcom/react-simple-boilerplate.git",
+  "repository": "git@github.com:yuttasakcom/react-todo-frontend.git",
   "author": "Yuttasak Pannawat <yuttasakcom@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.config.dev.js --port 8080",
-    "test": "jest --watch",
+    "test": "jest --watch --runInBand",
     "build": "webpack --mode production",
-    "coverage": "jest --coverage",
-    "test:ci": "jest"
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
-    }
+    "coverage": "jest --runInBand --forceExit --coverage",
+    "test:ci": "jest --runInBand --forceExit"
   },
   "dependencies": {
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "remove": "^0.1.5"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@babel/core": "^7.4.0",
