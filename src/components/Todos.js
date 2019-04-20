@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Todos = ({ todos }) => {
   return (
     <section className="container">
-      <p>Todo List</p>
+      <p data-test="todos-title">Todo List</p>
       {todos && (
         <ul className="list-group">
           {todos.map(todo => (
