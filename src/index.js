@@ -1,6 +1,9 @@
+import "@babel/polyfill";
 import React from "react";
 import { render } from "react-dom";
+import axios from "axios";
+import Router from "./routes";
 
-import App from "./components/App";
+axios.defaults.baseURL = process.env.API_URL;
 
-render(<App />, document.getElementById("root"));
+render(<Router />, document.getElementById("root"));

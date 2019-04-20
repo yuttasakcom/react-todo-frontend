@@ -8,13 +8,13 @@ configure({ adapter: new Adapter() });
 
 const setup = () => shallow(<App />);
 
-it("should render App component", () => {
+it("should render Todo App", () => {
   const wrapper = setup();
   expect(wrapper.length).toBe(1);
 });
 
-it("should render tag h1 equal App Component", () => {
+it("should render tag h1 equal Todo App", () => {
   const wrapper = setup();
   const h1 = wrapper.find("h1");
-  expect(h1.text()).toEqual("App Component");
+  expect(h1.text()).toEqual("Todo App");
 });
