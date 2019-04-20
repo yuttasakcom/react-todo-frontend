@@ -10,7 +10,7 @@
     "test": "jest --watch --runInBand",
     "build": "webpack --mode production",
     "coverage": "jest --runInBand --forceExit --coverage",
-    "test:ci": "jest --runInBand --forceExit"
+    "test-ci": "jest --runInBand --forceExit --detectOpenHandles"
   },
   "dependencies": {
     "axios": "^0.18.0",
